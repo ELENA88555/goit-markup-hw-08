@@ -54,14 +54,16 @@
             </a>
           </li>
         </ul>
-        <button class="page-header__menu-btn" type="button" >
+        <button class="page-header__menu-btn .is-open" type="button" >
           <svg class="page-header__icon">
             <use href="./images/icons.svg#icon-menu">
-
             </use>
-
+            <use class="page-header__menu--cloze" href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
+        <div class="page-header__menu">
+
+        </div>
       </div>
     </header>
     <main>
@@ -170,7 +172,7 @@
         </div>
       </section>
       <section class="section section-worker">
-        <div class="container">
+        <div class="container section-worker">
           <h2 class="section__title title-worker">Наша команда</h2>
           <ul class="list-worker">
             <li class="list-worker__content">

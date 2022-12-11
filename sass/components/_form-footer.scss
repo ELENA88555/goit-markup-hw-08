@@ -11,20 +11,19 @@ text-align: center
 }
 
 .form-footer__field {
-  text-align: center;
-  @media screen and (min-width: 1200px) {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-    margin: auto;
-  }
+text-align: center;
 
-
+@media screen and (min-width: 1200px) {
+display: flex;
+align-items: center;
+justify-content: center;
+margin: auto;
+}
 }
 
 .footer-input {
   margin-bottom: 20px;
-  width:100%;
+ width: auto;
   height: 50px;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -38,18 +37,22 @@ text-align: center
     border-color: var(--logo-link);
     }
     &::placeholder {
-      @include fonts(400, 12px);
-      line-height: 1.25;
-      letter-spacing: $let-sp;
-      color: rgba(255, 255, 255, 0.6);
-      
-      }
+@include fonts(400, 12px);
+line-height: 1.25;
+letter-spacing: $let-sp;
+color: rgba(255, 255, 255, 0.6);
+  }
 
-      @media screen and (min-width: 1200px) {
-        min-width: 358px;
-        height: 50px;
-       }
-     
+@media screen and (min-width:480px) {
+width: 450px;
+}
+
+
+@media screen and (min-width: 1200px) {
+min-width: 358px;
+
+}
+
 }
 
 
