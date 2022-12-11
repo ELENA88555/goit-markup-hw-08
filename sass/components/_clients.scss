@@ -1,0 +1,53 @@
+.clients {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+
+
+@media screen and (min-width:1200px) {
+display: flex;
+align-items: center;
+justify-content: center;
+  gap: 30px;
+}
+  
+ }
+  
+     .clients__list {
+      flex-basis: calc((100% - 150px) / 6);
+      
+    }
+  
+  .client__link {
+  @extend %centeredFlex;
+  min-width: 210px;
+  height: 92px;
+  border: 1px solid  #AFB1B8 ;
+  border-radius: 4px;
+   transition: border-color 250ms var(--cubic-bezier);
+  &:hover,
+  &:focus {
+    border-color: var(--logo-link);
+      }
+  
+  }
+  
+  
+    .client__icon {
+      fill: #AFB1B8 ;
+      width: 106px;
+      height: 60px;
+      transition: fill 250ms var(--cubic-bezier);
+
+    .client__link:hover &,
+    .client__link:focus & {
+      fill: var(--logo-link);
+    }
+    }
+  
+    
+  
+  
+    
+  
+  

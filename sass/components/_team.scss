@@ -1,0 +1,109 @@
+.list-worker {
+
+  background-color:var(--background-section-work);
+  @media screen and (mim-width:1200px) {
+  display: flex;
+  gap: 30px;
+  }
+    
+  }
+
+  
+    .list-worker__content {
+    box-shadow:0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    background-color: var(--white-color);
+    &:not(:last-child){
+      margin-bottom: 30px;
+    }
+   
+    @media screen and (min-width:1200px) {
+      width: calc((100% - 90px) /4);
+      
+    }
+    
+    }
+   section.section-worker {
+    // padding-top: 94px;
+    // padding-bottom: 94px;
+  background-color: var(--background-section-work);
+   }
+  
+.title-worker {
+  margin-bottom: 30px;
+  @include fonts(700, 28px);
+  line-height: calc(33 / 28);
+  text-align: center;
+  letter-spacing: $let-sp;
+  @media screen and (min-width:1200px) {
+  @include fonts($size:36px);
+  line-height: 1.16;
+  margin-bottom: 50px;
+}
+}
+
+
+.team-icon-list {
+
+  @extend %centeredFlex;
+  gap: 10px;
+ 
+}
+.team-icon {
+  @extend %centeredFlex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+   fill: #AFB1B8;
+   transition: background-color 250ms var(--cubic-bezier);
+  &:hover,
+  &:focus {
+   background-color: var(--logo-link);
+
+   }
+    }
+   
+.team-icon__link {
+  transition: fill 250ms var(--cubic-bezier);
+.team-icon:hover &,
+.team-icon:focus & {
+fill: var(--white-color);
+
+   }
+}
+   
+
+
+
+   .team__subject {
+    margin-bottom: 10px;
+    @include fonts($weight:500, $size:16px);
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+  }
+
+  .text-profession {
+    @include fonts($size:16px);
+    line-height: 1.88;
+    letter-spacing: $let-sp;
+    color: var(--color-grey);
+    }
+  
+    .team__text-professional-contact {
+    @include fonts($size:16px);
+    line-height: 1.18;
+    letter-spacing: $let-sp;
+    color: var(--color-grey);
+    }
+  
+  .team {
+  
+    padding-top: 30px;
+    padding-bottom: 24px;
+  margin: auto;
+  text-align: center;
+  @media screen and (min-width:1200px) {
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
+  }

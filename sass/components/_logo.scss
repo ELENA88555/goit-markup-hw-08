@@ -1,0 +1,48 @@
+.logo {
+  font-family: $fontLogo;
+  @include fonts(700, 24px);
+  line-height:calc(28 / 24);
+  letter-spacing: $let-sp;
+  color: var(--logo-color);
+  text-decoration: none;
+  margin-right: 93px;
+  transition-property: color;
+    transition-duration:250ms;
+    transition-timing-function: var(--cubic-bezier);
+    &:hover, &:focus {
+      color:var(--logo-link);
+    }
+  
+
+  }
+  // @include fonts(700, 26px);
+  // line-height: 1.19;
+ 
+  
+  .logo__web {
+    color:var(--logo-link);
+    text-decoration: none;
+    
+  }
+
+  .logo__studio {
+color: var(--white-color);
+&:hover,
+&:focus {
+    color: var(--logo-link);
+  }
+}
+
+
+
+  
+   .logo-footer {
+    display: block;
+    margin-bottom: 20px;
+    margin-right: 0;
+    text-align: center;
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 20px;
+      display: inline-block;  
+    }
+  }

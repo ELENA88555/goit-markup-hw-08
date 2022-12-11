@@ -1,0 +1,223 @@
+.backdrop {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: opacity 300ms var(--cubic-bezier), visibility 300ms var(--cubic-bezier);
+    }
+
+
+.modal {
+  position: absolute;
+  width: 528px;
+  min-height: 581px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  background-color: var(--white-color);
+  border-radius: 4px;
+  top: 50%;
+  left: 50%;
+  padding: 40px;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 300ms var(--cubic-bezier);
+  
+  }
+  
+  .backdrop.is-hidden .modal {
+    transform: translate(-50%, -50%) scale(0);
+  }
+
+  .modal__btn-cloze {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  background-color: transparent;
+  }
+  
+  .modal__btn-cloze-icon {
+  
+    width: 11px;
+    height: 11px;
+    .modal__btn-cloze:focus &{
+      fill: var(--logo-link);
+      }
+      
+      .modal__btn-cloze:hover & {
+        fill: var(--logo-link);
+        }
+    
+  }
+  
+  
+.modal__text{
+  margin-bottom: 12px;
+  text-align: center;
+  @include fonts(700, 20px);
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  color: #212121;
+} 
+
+
+.modal__input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  background-color: transparent;
+  outline: transparent;
+  padding: 0 0 0 42px;
+  font-size: 12px;
+  transition: border-color 250ms var(--cubic-bezier), fill 250ms var(--cubic-bezier);
+  
+&:focus, &:hover {
+  border-color: var(--logo-link);
+}
+
+}
+
+
+.modal__label{
+  display: block;
+  margin-bottom: 4px;
+  @include fonts(null, 12px);
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: #757575;
+  }
+
+  .input-wrapper{
+    position: relative;
+    
+   
+  }
+
+  .modal__icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    fill: var(--text-color);
+    
+ .modal__input:focus + & {
+  fill: var(--logo-link);
+} 
+.modal__input:hover + & {
+  fill: var(--logo-link);
+}
+  }
+
+
+.form-field {
+  margin-bottom: 10px;
+ }
+
+
+
+
+
+
+.modal__user-coment {
+  width:100%;
+  height: 138px;
+  padding: 16px 12px;
+  resize: none;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  background-color: transparent;
+  font-size: 12px;
+  outline: transparent;
+  transition: border-color 250ms var(--cubic-bezier);
+  &::placeholder {
+  @include fonts;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+    
+  } 
+  &:focus, &:hover {
+    border-color: var(--logo-link);
+  }
+  
+} 
+
+
+
+.modal-btn {
+margin: auto;
+@extend %centeredFlex;
+Width:200px;
+Height:50px;
+background-color:#2196F3 ;
+color: var(--white-color);
+@include fonts(700, 16px);
+line-height: 1.88;
+border: transparent;
+letter-spacing: 0.06em;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+transition: background-color 250px var(--cubic-bezier);
+&:focus, &:hover {
+  background-color: #188CE8;
+}
+}
+
+
+
+.form-checkbox__text {
+  @extend %centeredFlex;
+  line-height: 1.71;
+  @include fonts;
+  letter-spacing: $let-sp;
+  color: #757575;
+  }
+
+.form-checkbox__text span {
+  width: 16px;
+  height: 15px;
+  margin-right: 8px;
+  border: 2px solid var(--text-color);
+  border-radius: 2px;
+  @extend %centeredFlex;
+  fill: transparent;
+  .form-checkbox__modal-check:checked + & {
+    border: none;
+    background-color: var(--logo-link);
+    fill: var(--white-color);
+  }
+  
+  .form-checkbox__modal-check:hover + & {
+  border-color: var(--logo-link);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  
+  }
+  
+  .form-checkbox__modal-check:focus + & {
+    border-color: var(--logo-link);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    
+    }
+}
+
+
+
+.form-checkbox {
+  margin-top: 20px;
+ margin-bottom: 30px;
+}
+
+
+.modal-link {
+  @include fonts;
+  line-height: 1.17;
+  letter-spacing: $let-sp;
+  text-decoration-line: underline;
+  color: #2196F3;
+  padding-left: 5px;
+  
+  }

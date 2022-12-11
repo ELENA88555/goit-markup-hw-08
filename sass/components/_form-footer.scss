@@ -1,0 +1,99 @@
+
+.form-footer__text {
+  margin-bottom: 20px;
+  @include fonts(700, 14px);
+line-height: 1.14;
+letter-spacing: $let-sp;
+text-transform: uppercase;
+color: var(--white-color);
+text-align: center
+
+}
+
+.form-footer__field {
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+    margin: auto;
+  }
+
+
+}
+
+.footer-input {
+  margin-bottom: 20px;
+  width:100%;
+  height: 50px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow:(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  padding-left: 15px;
+  outline: transparent;
+  color:rgba(255, 255, 255, 0.6);
+  transition: border-color 250px var(--cubic-bezier);
+  &:focus, &:hover {
+    border-color: var(--logo-link);
+    }
+    &::placeholder {
+      @include fonts(400, 12px);
+      line-height: 1.25;
+      letter-spacing: $let-sp;
+      color: rgba(255, 255, 255, 0.6);
+      
+      }
+
+      @media screen and (min-width: 1200px) {
+        min-width: 358px;
+        height: 50px;
+       }
+     
+}
+
+
+
+
+
+.form-footer__btn{
+@extend %centeredFlex;
+ gap: 10px;
+ margin:auto;
+ margin-left: auto;
+ padding: 0;
+width: 200px;
+height: 50px;
+background: #2196F3;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border: transparent;
+border-radius: 4px;
+@include fonts($weight:700, $size:16px);
+line-height: 1.88;
+text-align: center;
+letter-spacing: 0.06em;
+color: #FFFFFF;
+
+transition: background-color 250px var(--cubic-bezier);
+&:focus, &:hover {
+  background-color:#188CE8;
+ }
+
+
+ @media screen and (min-width: 1200px) {
+  margin-left: 12px;
+
+}
+}
+
+
+.form-footer__icon {
+  fill: var(--white-color);
+ 
+}
+
+
+
+.form-footer {
+  margin-left: auto;
+}
