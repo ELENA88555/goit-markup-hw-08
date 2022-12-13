@@ -22,8 +22,7 @@
     <header class="page-header">
       <div class="container">
         <a class="logo" href="./index.html">
-          <span class="logo__web">Web</span>
-          Studio
+          <span class="logo__web">Web</span>Studio
         </a>
         <nav class="nav">
           <ul class="list nav__header">
@@ -32,10 +31,10 @@
             <li><a class="nav__link" href="">Контакти</a></li>
           </ul>
         </nav>
-        <ul class="list nav-contact">
+        <ul class=" nav-contact">
           <li>
             <a class="nav-contact__link" href="mailto:info@devstudio.com">
-              <svg class="nav-contact__icon" width="16" height="12">
+              <svg class="nav-contact__icon nav-contact__icon--mail" width="16" height="12">
                 <use
                   href="./images/icons.svg#icon-envelope"
                 ></use>
@@ -45,7 +44,7 @@
           </li>
           <li>
             <a class="nav-contact__link nav-contact__link--tel" href="tel:+380961111111">
-              <svg class="nav-contact__icon" width="10" height="16">
+              <svg class="nav-contact__icon nav-contact__icon--tel" width="10" height="16">
                 <use
                   href="./images/icons.svg#icon-smartphone"
                 ></use>
@@ -66,7 +65,7 @@
             </svg>
           </button>
             <div class="container--menu">
-          <div class="">
+          <!-- <div class=""> -->
                              
           
           <nav class="mob-menu__nav">
@@ -76,7 +75,7 @@
               <li class="mob-menu__item"><a class="mob-menu__item--link" href="">Контакти</a></li>
             </ul>
           </nav>
-        <div>
+        <div class="mob-menu--block">
            <ul class="mob-menu__contact">
               <li class="mob-menu-tel">
                 <a 
@@ -108,7 +107,7 @@ Facebook
 LinkedIn
 </a></li>
 </ul>
-</div>
+<!-- </div> -->
     
 </div>
 </div>
@@ -192,13 +191,17 @@ LinkedIn
         <div class="container">
           <h2 class="section__title">Чим ми займаємося</h2>
           <ul class="list list-work">
-            <li>
+            <li class="section-work__list">
               <div class="overlay">
-                <img src="./images/pc.jpg" alt="робота за комп" width="370" />
+                <img 
+
+                src="./images/pc.jpg"
+                alt="робота за комп" 
+                width="370" />
                 <p class="overlay__text">Десктопні додатки</p>
               </div>
             </li>
-            <li>
+            <li class="section-work__list">
               <div class="overlay">
                 <img
                   src="./images/tel.jpg"
@@ -208,7 +211,7 @@ LinkedIn
                 <p class="overlay__text">Мобільні додатки</p>
               </div>
             </li>
-            <li>
+            <li class="section-work__list">
               <div class="overlay">
                 <img
                   src="./images/planshet.jpg"
@@ -226,12 +229,26 @@ LinkedIn
           <h2 class="section__title title-worker">Наша команда</h2>
           <ul class="list-worker">
             <li class="list-worker__content">
-              <img 
-              class="section-worker_img"
-                src="./images/demianenko.jpg"
-                alt="фото демяненко"
-                width="270"
-              />
+              <picture>
+                <source srcset="
+                ./images/demianenko.jpg 1x,
+                ./images/demyanenko-2x.jpg 2x "
+                media="(min-width: 1200px)">
+                <source srcset="
+                ./images/demyanenko-tab-1x.jpg 1x,
+                ./images/demyanenko-tab-2x.jpg 2x "
+                media="(min-width: 768px)">
+                <source srcset="
+                ./images/demyanenko-tel-1x.jpg 1x,
+                ./images/demyanenko-tel-2x.jpg 2x "
+                media="(max-width: 767px)">
+                <img 
+                class="section-worker_img"
+                  src="./images/demianenko.jpg"
+                  alt="фото демяненко"
+                  width="270"/>
+               </picture>
+
               <div class="team">
                 <h3 class="team__subject">Ігор Дем'яненко</h3>
                 <p class="team__text-professional-contact" lang="en">
@@ -278,11 +295,26 @@ LinkedIn
               </div>
             </li>
             <li class="list-worker__content">
-              <img 
-              class="section-worker_img"
-              src="./images/repina.jpg"
-               alt="фото репіна"
-                width="270" />
+              <picture>
+                <source srcset="
+                ./images/repina.jpg 1x,
+                ./images/repina-2x.jpg 2x "
+                media="(min-width: 1200px)">
+                <source srcset="
+                ./images/repina-tab-1x.jpg 1x,
+                ./images/repina-2x.jpg 2x "
+                media="(min-width: 768px)">
+                <source srcset="
+                ./images/repina-tel-1x.jpg 1x,
+                ./images/repina-tel-2x.jpg 2x "
+                media="(max-width: 767px)">
+                <img 
+                class="section-worker_img"
+                src="./images/repina.jpg"
+                 alt="фото репіна"
+                  width="270" />
+               </picture>
+
               <div class="team">
                 <h3 class="team__subject">Ольга Рєпіна</h3>
                 <p class="team__text-professional-contact" lang="en">
@@ -329,11 +361,27 @@ LinkedIn
               </div>
             </li>
             <li class="list-worker__content">
-              <img 
-              class="section-worker_img"
-              src="./images/tarasov.jpg"
-               alt="фото тарасов"
-                width="270" />
+              <picture>
+                <source srcset="
+                ./images//tarasov.jpg 1x,
+                ./images/tarasov-2x.jpg 2x "
+                media="(min-width: 1200px)">
+                <source srcset="
+                ./images/tarasov-tab-1x.jpg 1x,
+                ./images/tarasov-tab-2x.jpg 2x "
+                media="(min-width: 768px)">
+                <source srcset="
+                ./images/tarasov-tel-1x.jpg 1x,
+                ./images/tarasov-tab-2x.jpg 2x "
+                media="(max-width: 767px)">
+                <img 
+                class="section-worker_img"
+                src="./images/tarasov.jpg"
+                 alt="фото тарасов"
+                  width="270" />
+               </picture>
+
+
               <div class="team">
                 <h3 class="team__subject">Микола Тарасов</h3>
                 <p class="team__text-professional-contact" lang="en">Marketing</p>
@@ -378,11 +426,27 @@ LinkedIn
               </div>
             </li>
             <li class="list-worker__content">
-              <img
-              class="section-worker_img"
-               src="./images/ermakov.jpg"
-                alt="фото єрмаков"
-                width="270" />
+              <picture>
+                <source srcset="
+                ./images//ermakov.jpg 1x,
+                ./images/ermacov-2x.jpg 2x "
+                media="(min-width: 1200px)">
+                <source srcset="
+                ./images/ermacov-tab-1x.jpg 1x,
+                ./images/ermacov-tab-2x.jpg 2x "
+                media="(min-width: 768px)">
+                <source srcset="
+                ./images/ermacov-tel-1x.jpg 1x,
+                ./images/ermacov-tel-2x.jpg 2x "
+                media="(max-width: 767px)">
+                <img
+                class="section-worker_img"
+                 src="./images/ermakov.jpg"
+                  alt="фото єрмаков"
+                  width="270" />
+               </picture>
+
+
               <div class="team">
                 <h3 class="team__subject">Михайло Єрмаков</h3>
                 <p class="team__text-professional-contact" lang="en">UI Designer</p>
@@ -493,78 +557,82 @@ LinkedIn
     </main>
     <footer class="addresses">
       <div class="container container-footer">
-        <div class="address-container">
-          <a class="logo logo-footer" href="./index.html">
-            <span class="logo__web">Web</span>
-            <span class="logo__studio">Studio</span>
-          </a>
-          <address class="address-contact ">
-            <ul class="list address-footer">
+        <div class="addresses--thumb">
+          <div class="address-container">
+            <a class="logo logo-footer" href="./index.html">
+              <span class="logo__web">Web</span>
+              <span class="logo__studio">Studio</span>
+            </a>
+            <address class="address-contact ">
+              <ul class="list address-footer">
+                <li>
+                  <a class="address" href="https://goo.gl/maps/dMfsx1msAfwkpXwt9">
+                    м. Київ, пр-т Лесі Українки, 26
+                  </a>
+                </li>
+  
+                <li>
+                  <a
+                    class="contact-address"
+                    href="tel:+380961111111"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                  >
+                    +38 096 111 11 11
+                  </a>
+                </li>
+                <li>
+                  <a class="contact-address" href="mailto:info@devstudio.com"
+                    >info@devstudio.com
+                  </a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="social-link">
+            <p class="social-link__title-icon">приєднуйтесь</p>
+            <ul class="team-icon-list">
               <li>
-                <a class="address" href="https://goo.gl/maps/dMfsx1msAfwkpXwt9">
-                  м. Київ, пр-т Лесі Українки, 26
+                <a class="team-icon icon-footer" href="">
+                  <svg class="team-icon__link" width="20px" height="20px">
+                    <use
+                      href="./images/icons.svg#icon-instagram"
+                    ></use>
+                  </svg>
                 </a>
               </li>
-
               <li>
-                <a
-                  class="contact-address"
-                  href="tel:+380961111111"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                >
-                  +38 096 111 11 11
+                <a class="team-icon icon-footer" href="">
+                  <svg class="team-icon__link" width="20px" height="20px">
+                    <use
+                      href="./images/icons.svg#icon-twitter"
+                    ></use>
+                  </svg>
                 </a>
               </li>
               <li>
-                <a class="contact-address" href="mailto:info@devstudio.com"
-                  >info@devstudio.com
+                <a class="team-icon icon-footer" href="">
+                  <svg class="team-icon__link" width="20px" height="20px">
+                    <use
+                      href="./images/icons.svg#icon-facebook"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="team-icon icon-footer" href="">
+                  <svg class="team-icon__link" width="20px" height="20px">
+                    <use
+                      href="./images/icons.svg#icon-linkedin"
+                    ></use>
+                  </svg>
                 </a>
               </li>
             </ul>
-          </address>
+          </div>
+
         </div>
-        <div class="social-link">
-          <p class="social-link__title-icon">приєднуйтесь</p>
-          <ul class="team-icon-list">
-            <li>
-              <a class="team-icon icon-footer" href="">
-                <svg class="team-icon__link" width="20px" height="20px">
-                  <use
-                    href="./images/icons.svg#icon-instagram"
-                  ></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="team-icon icon-footer" href="">
-                <svg class="team-icon__link" width="20px" height="20px">
-                  <use
-                    href="./images/icons.svg#icon-twitter"
-                  ></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="team-icon icon-footer" href="">
-                <svg class="team-icon__link" width="20px" height="20px">
-                  <use
-                    href="./images/icons.svg#icon-facebook"
-                  ></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="team-icon icon-footer" href="">
-                <svg class="team-icon__link" width="20px" height="20px">
-                  <use
-                    href="./images/icons.svg#icon-linkedin"
-                  ></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
+       
        <form class="form-footer" >
         <p class="form-footer__text"> Підпишіться на розсилку</p>
        <div class="form-footer__field">
@@ -658,6 +726,7 @@ LinkedIn
                 <svg  width="16" height="15" >
                   <use href="./images/icons.svg#icon-Vector-one"></use>
                 </svg>
+                
               </span>
                Погоджуюся з розсилкою та приймаю
               <a class="modal-link" href="">Умови договору</a>

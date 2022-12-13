@@ -6,8 +6,11 @@ line-height: 1.14;
 letter-spacing: $let-sp;
 text-transform: uppercase;
 color: var(--white-color);
-text-align: center
+text-align: center;
 
+@media screen and (min-width: 1200px) {
+text-align: left;
+  }
 }
 
 .form-footer__field {
@@ -37,8 +40,8 @@ margin: auto;
     border-color: var(--logo-link);
     }
     &::placeholder {
-@include fonts(400, 12px);
-line-height: 1.25;
+@include fonts(400, 16px);
+line-height: calc(20 / 16);
 letter-spacing: $let-sp;
 color: rgba(255, 255, 255, 0.6);
   }
@@ -49,7 +52,8 @@ width: 450px;
 
 
 @media screen and (min-width: 1200px) {
-min-width: 358px;
+  width: 358px;
+  margin: 0;
 
 }
 

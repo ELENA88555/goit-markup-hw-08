@@ -2,18 +2,38 @@
   padding-top: 118px;
   padding-bottom: 118px;
   background: #2F303A;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/backgraund.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+  url(../../images/Header-mob.jpg);
+  @include retina {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../../images/Header-mob.2x.jpg);
+  }
   background-repeat: no-repeat; 
   background-position: center; 
   background-size: cover; 
   max-width: 1600px; 
   margin: 0 auto; 
+  @media screen and(min-widht:480px) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../../images/Header-tab.jpg);
+    @include retina{
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../../images/Header-tab.2x.jpg);
+    }
+  }
   @media screen and (min-width: 1200px) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+  url(../images/backgraund.jpg);
     padding-top: 200px;
     padding-bottom: 200px;
+@include retina {
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+  url(../../images/Header.2x.jpg);
+  }
    }
   
   }
+
   
   
   .hero__main-title {
@@ -36,6 +56,7 @@
    @media screen and (min-width: 1200px) {
     @include fonts(900, 44px);
     max-width: 696px;
+    line-height:calc(60 / 44);
    }
   
 }
@@ -70,4 +91,3 @@
 
   }
   
- 
