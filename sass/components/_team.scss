@@ -23,9 +23,7 @@ border-radius: 0px 0px 4px 4px;
 background-color: var(--white-color);
 
 
-// &:not(:last-child){
-//   margin-bottom: 30px;
-// }
+
 
 @media screen and (min-width:768px) {
 margin-bottom: 0px;
@@ -42,8 +40,7 @@ width: calc((100% - 90px) /4);
 
 }
 .section-worker {
-// padding-top: 94px;
-// padding-bottom: 94px;
+
 background-color: var(--background-section-work);
 }
 
@@ -54,7 +51,7 @@ background-color: var(--background-section-work);
   text-align: center;
   letter-spacing: $let-sp;
   @media screen and (min-width:1200px) {
-  @include fonts($size:36px);
+  @include fonts(700, 36px);
   line-height: 1.16;
   margin-bottom: 50px;
 }
@@ -109,6 +106,7 @@ fill: var(--white-color);
   
     .team__text-professional-contact {
     @include fonts($size:16px);
+    margin-bottom: 16px;
     line-height: 1.18;
     letter-spacing: $let-sp;
     color: var(--color-grey);

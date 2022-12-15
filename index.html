@@ -32,7 +32,7 @@
           </ul>
         </nav>
         <ul class=" nav-contact">
-          <li>
+          <li class="nav-contact__list">
             <a class="nav-contact__link" href="mailto:info@devstudio.com">
               <svg class="nav-contact__icon nav-contact__icon--mail" width="16" height="12">
                 <use
@@ -42,7 +42,7 @@
               info@devstudio.com
             </a>
           </li>
-          <li>
+          <li class="nav-contact__list">
             <a class="nav-contact__link nav-contact__link--tel" href="tel:+380961111111">
               <svg class="nav-contact__icon nav-contact__icon--tel" width="10" height="16">
                 <use
@@ -70,7 +70,7 @@
           
           <nav class="mob-menu__nav">
             <ul class="mob-menu__list">
-              <li class="mob-menu__item"><a class="mob-menu__item--link " href="./index.html">Студія</a></li>
+              <li class="mob-menu__item"><a class="mob-menu__item--link nav__link--current " href="./index.html">Студія</a></li>
               <li class="mob-menu__item"><a class="mob-menu__item--link" href="./portfolio.html">Портфоліо</a></li>
               <li class="mob-menu__item"><a class="mob-menu__item--link" href="">Контакти</a></li>
             </ul>
@@ -302,7 +302,7 @@ LinkedIn
                 media="(min-width: 1200px)">
                 <source srcset="
                 ./images/repina-tab-1x.jpg 1x,
-                ./images/repina-2x.jpg 2x "
+                ./images/repina-tab-2x.jpg 2x "
                 media="(min-width: 768px)">
                 <source srcset="
                 ./images/repina-tel-1x.jpg 1x,
@@ -726,10 +726,14 @@ LinkedIn
                 <svg  width="16" height="15" >
                   <use href="./images/icons.svg#icon-Vector-one"></use>
                 </svg>
-                
+                            
               </span>
-               Погоджуюся з розсилкою та приймаю
-              <a class="modal-link" href="">Умови договору</a>
+              <div>
+                Погоджуюся з розсилкою та приймаю
+                <a class="modal-link" href="">Умови договору</a>
+              </div>
+          
+              
           </label>
            
           </div>
@@ -739,7 +743,6 @@ LinkedIn
       </div>
     </div>
         <script src="./js/modal.js"></script> 
-    <!-- <script src="./js/mobile-menu.js"></script>  -->
-    <script src="./js/menu.js"></script> 
+       <script src="./js/menu.js"></script> 
   </body>
 </html>

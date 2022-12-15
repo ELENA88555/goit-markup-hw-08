@@ -12,7 +12,11 @@
   }
 
  .address-contact{
-  margin-bottom: 60px
+  margin-bottom: 60px;
+  @media screen and(min-width:768px)  {
+    margin-bottom: 0;
+    }
+    
  }
 
 
@@ -33,7 +37,7 @@
 
 
 .address-container {
-  margin-left: 0;
+
 @media screen and(min-width:768px) and (max-width:1199px) {
 margin-left: 76px;
 }
@@ -41,16 +45,21 @@ margin-left: 76px;
 }
 
 .addresses--thumb{
-
+  margin-left: 0;
+margin-bottom: 60px;
   @media screen and(min-width:768px) and (max-width:1199px) {
     display: flex;
     flex-wrap: wrap;
     gap: 165px;
+    align-items: baseline;
+   
     }
 
     @media screen and (min-width:1200px) {
       display: flex;
       gap: 94px;
+      margin-bottom: 0;
+     
     }
   }
 
@@ -103,9 +112,10 @@ fill: var(--white-color);
 } 
 
 .social-link {
-  margin-bottom: 60px;
+
   @media screen and (min-width:1200px) {
     margin-left: 0;
+    margin-bottom: 0;
   }
  
 

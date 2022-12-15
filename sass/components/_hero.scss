@@ -3,10 +3,10 @@
   padding-bottom: 118px;
   background: #2F303A;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-  url(../../images/Header-mob.jpg);
+  url(../images/Header-mob.jpg);
   @include retina {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../../images/Header-mob.2x.jpg);
+    url(../images/Header-mob.2x.jpg);
   }
   background-repeat: no-repeat; 
   background-position: center; 
@@ -15,10 +15,10 @@
   margin: 0 auto; 
   @media screen and(min-widht:480px) {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../../images/Header-tab.jpg);
+    url(../images/Header-tab.jpg);
     @include retina{
       background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../../images/Header-tab.2x.jpg);
+      url(../images/Header-tab.2x.jpg);
     }
   }
   @media screen and (min-width: 1200px) {
@@ -28,7 +28,7 @@
     padding-bottom: 200px;
 @include retina {
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-  url(../../images/Header.2x.jpg);
+  url(../images/Header.2x.jpg);
   }
    }
   

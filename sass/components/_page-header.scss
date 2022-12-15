@@ -48,12 +48,26 @@ margin-left: 30px;
   margin-left: 0;
   @media screen and(min-width:768px) {
     display: block;
-    }
+  }
     @media screen and(min-width:1200px) {
       display: flex;
       justify-content: center;
       align-items: center;
       }
+
+}
+
+.nav-contact__list{
+
+
+  @media screen and(min-width:480px) and(max-width:1199px) {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+      
+    }
+    }
+
+
 }
 
 .nav__link {
@@ -74,7 +88,7 @@ color:var(--logo-link);
 
 
 .nav-contact__link {
-@extend %centeredFlex;
+
 @include fonts($weight:500);
 line-height: 1.14;
 letter-spacing: 0.02em;
@@ -88,7 +102,8 @@ transition-timing-function: var(--cubic-bezier);
 color:var(--logo-link);
 }
 @media screen and(min-width:768px) {
-  display: block;
+  display: flex;
+  align-items: center;
   @include fonts(500, 12px);
 line-height: calc(14 / 12);
 }
@@ -129,6 +144,9 @@ border-radius: 2px;
 }
 
 .mob-menu__btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
 background-color: transparent;
 border: none;
 display: block;
@@ -186,6 +204,7 @@ letter-spacing: 0.02em;
 color: var(--text-color);
 text-decoration: none;
 cursor: pointer;
+
 transition: color 250ms var(--cubic-bezier);
 &:hover,
 &:focus {
@@ -199,12 +218,9 @@ font-weight: 500;
 font-size: 34px;
 line-height: calc(40 / 34);
 letter-spacing: 0.02em;
-color: var(--color-grey);
-transition: color 250ms var(--cubic-bezier);
-&:hover,
-&:focus {
 color: var(--logo-link);
-}
+transition: color 250ms var(--cubic-bezier);
+
 }
 
 .mob-menu-tel{
@@ -244,12 +260,9 @@ border: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 .mob-menu__soc-link{
-color: #757575;
-transition: color 250ms var(--cubic-bezier);
-&:hover,
-&:focus {
 color: var(--logo-link);
-}
+transition: color 250ms var(--cubic-bezier);
+
 }
 
 .mob-menu{
@@ -259,7 +272,7 @@ height: 100vh;
 background-color:#FFFFFF;
 top: 0;
 left: 0;
-padding: 10px 15px 48px 40px;
+padding: 48px 40px;
 z-index: 1;
 @media screen and(min-width:768px) {
 display: none;
@@ -268,13 +281,13 @@ display: none;
 
 .mob-menu__soc{
 display: flex;
+flex-wrap: wrap;
 gap: 20px;
 }
 
 
 .container--menu{
 height: 100%;
-overflow: auto;
 justify-content: space-between;
 display: flex;
 flex-direction: column;
